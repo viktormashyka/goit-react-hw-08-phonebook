@@ -1,5 +1,4 @@
 import { useAuth } from 'hooks';
-import { Component } from 'react';
 import { Navigate } from 'react-router-dom';
 
 /**

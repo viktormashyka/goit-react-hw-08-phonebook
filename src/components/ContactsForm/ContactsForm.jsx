@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 
 import { Button } from './ContactsForm.styled';
-import { addContact } from 'redux/operations';
-import { selectContacts } from 'redux/selectors';
+import { addContact } from 'redux/contacts/operations';
+import { selectContacts } from 'redux/contacts/selectors';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
@@ -18,12 +18,21 @@ export const ContactForm = () => {
 
     for (const contact of contacts) {
       if (contact.name === name) {
-        toast.info('This contact exist in your list');
+        // toast.info('This contact exist in your list');
+        console.log('This contact exist in your list');
         return;
       }
     }
+
     dispatch(addContact({ name, number }));
     form.reset();
+
+    // if (name !== '') {
+    //   dispatch(addContact({ name, number }));
+    //   form.reset();
+    //   return;
+    // }
+    // alert('Contact cannot be empty. Enter some name!');
   };
 
   return (

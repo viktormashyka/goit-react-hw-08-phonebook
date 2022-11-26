@@ -1,5 +1,5 @@
-import { Main } from './Layout.styled';
+// import { Main } from './Layout.styled';
 
-export const Layout = ({ children }) => {
-  return <Main>{children}</Main>;
-};
+// export const Layout = ({ children }) => {
+//   return <Main>{children}</Main>;
+// };

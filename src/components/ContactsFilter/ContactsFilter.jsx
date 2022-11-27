@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 
 // import { changeFilter } from 'redux/filterSlice';
 import { changeFilter } from 'redux/filter/slice';
+import css from './ContactsFilter.module.css';
 
 export const FilterBox = ({ value }) => {
   const dispatch = useDispatch();
@@ -14,7 +15,7 @@ export const FilterBox = ({ value }) => {
   };
 
   return (
-    <label htmlFor="">
+    <label className={css.label} htmlFor="">
       Find contacts by name
       <br />
       <input

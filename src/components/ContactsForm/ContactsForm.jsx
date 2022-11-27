@@ -5,6 +5,8 @@ import { Button } from './ContactsForm.styled';
 import { addContact } from 'redux/contacts/operations';
 import { selectContacts } from 'redux/contacts/selectors';
 
+import css from './ContactsForm.module.css';
+
 export const ContactForm = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
@@ -36,8 +38,8 @@ export const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="">
+    <form className={css.form} onSubmit={handleSubmit}>
+      <label className={css.label} htmlFor="">
         Name
         <br />
         <input
@@ -50,7 +52,7 @@ export const ContactForm = () => {
         />
       </label>
       <br />
-      <label htmlFor="">
+      <label className={css.label} htmlFor="">
         Number
         <br />
         <input

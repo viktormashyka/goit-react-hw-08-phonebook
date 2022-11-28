@@ -1,0 +1,10 @@
+.layout {
+  display: grid;
+  gap: 16px;
+  /* justify-content: center; */
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* style={{ maxWidth: 960, margin: '0 auto', padding: '0 16px' }} */

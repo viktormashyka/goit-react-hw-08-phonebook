@@ -1,7 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks';
-
-// import { NavLink } from './Navigator.styled';
 import css from './Navigation.module.css';
 
 export const Navigation = () => {
